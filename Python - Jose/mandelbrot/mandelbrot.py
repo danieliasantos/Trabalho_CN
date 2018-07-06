@@ -1,23 +1,21 @@
 import numpy
-def mandel (z):
-    n = 0
+
+def mandel(z,maxiter):
     c = z
-    for n in (0,79):
-        if abs(z)>2: return
-    z = z**2+c
-    n = 80
+    for n in range(maxiter):
+        if abs(z) > 2:
+            return n
+        z = z*z + c
+    return 0
 
-def mandelperf():
-    a = numpy.zeros(shape=(5,2))
-    print a
-#     M = zeros(length(-2.0:.1:0.5), length(-1:.1:1))
-#     count = 1
-#     for r = -2:0.1:0.5
-#     for i = -1:.1:1
-#     M(count) = mandel(complex(r,i)
-#     count = count + 1
-#     end
-#     end
-# end
+def mandelperf(xmin, xmax, ymin, ymax, largura, altura, maxIter):
+    r1 = numpy.linspace(xmin, xmax, largura)
+    r2 = numpy.linspace(ymin, ymax, altura)
+    M = numpy.empty((largura,altura))
 
-mandelperf()
+    for i in range(largura):
+        for j in range(altura):
+            M[i,j] = mandel(r1[i] + 1j*r2[j], maxIter)
+    return (M)
+
+print mandelperf(-2, 0.5, -1, 1, 26, 21, 80)
