@@ -1,0 +1,21 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.50 }
+
+\bibitem{haskellWiki}
+\abntrefinfo{Wansbrough e Erisson}{WANSBROUGH; ERISSON}{}
+{WANSBROUGH, K.; ERISSON, S. \emph{Haskell Wiki - The Haskell Programming
+  Language}.
+Acesso em: 02/07/2018.
+Dispon{\'\i}vel em:
+  $<$\href{https://wiki.haskell.org/Haskell}{https://wiki.haskell.org/Haskell}$>$.}
+
+\bibitem{histHas2007}
+\abntrefinfo{Hudak et al.}{HUDAK et al.}{2007}
+{HUDAK, P. et al. A history of haskell: Being lazy with class.
+2007.}
+
+\end{thebibliography}

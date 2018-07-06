@@ -1,0 +1,10 @@
+Version of workspace file format:
+               1
+Time of storage:
+               "Sun Jul  1 16:12:18 -03 2018"
+Name of the workspace:
+               "CalculoNumerico"
+File paths of contained packages:
+               ["TrabalhoFinal/TrabalhoFinal.cabal"]
+Maybe file path of an active package:
+               Just "TrabalhoFinal/TrabalhoFinal.cabal"
