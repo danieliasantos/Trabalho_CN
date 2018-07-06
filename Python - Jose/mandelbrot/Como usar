@@ -1,0 +1,8 @@
+Caro Carlos, é preciso instalar o NumPy para rodar este algoritmo em Python.
+
+Se você já tiver o pip instalado, basta rodar o seguinte comando:
+
+pip install numpy
+Se não possuir o pip instalado ainda, você precisa fazer o download do get-pip.py (https://bootstrap.pypa.io/get-pip.py).
+
+Em seguida, você precisa executar o arquivo que você acabou de baixar utilizando o comando "python get-pip.py" no terminal, dentro da pasta onde baixou o script)
