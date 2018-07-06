@@ -4,7 +4,7 @@
 -- Author      :  Dan McKinley (GitHub mcfunley)
 -- License     :
 --
--- Source  :
+-- Source      : https://gist.github.com/mcfunley/1c8f003ea306b8bc057e#file-mandel-hs
 -- Stability   :
 -- Portability :
 --
@@ -78,4 +78,3 @@ main = do
    ortho (-2) 1 (-1) 1 (-1) 1
    displayCallback $= display
    mainLoop
-
