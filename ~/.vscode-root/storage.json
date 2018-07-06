@@ -452,8 +452,24 @@
     "pickerWorkingDir": "/home/ifmg",
     "openedPathsList": {
         "workspaces": [
+            "/home/ifmg/tp-cn",
+            "/home/ifmg/tp-cn",
             "/home/ifmg/tp-cn"
         ],
         "files": []
+    },
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "folderPath": "/home/ifmg/tp-cn",
+            "backupPath": "/home/ifmg/tp-cn/~/.vscode-root/Backups/0132dcc74ce19bbc0a5405a91f1bcf07",
+            "uiState": {
+                "mode": 0,
+                "x": 65,
+                "y": 24,
+                "width": 1855,
+                "height": 1056
+            }
+        }
     }
 }
