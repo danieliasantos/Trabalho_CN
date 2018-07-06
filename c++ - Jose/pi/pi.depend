@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1530921308 source:/home/jose/dev-projects/Trabalho_CN/c++ - Jose/pi/main.cpp
+	<iostream>
+	<cmath>
+
