@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1530928641 source:/home/jose/dev-projects/Trabalho_CN/c++ - Jose/newton/newton/main.cpp
+	<stdio.h>
+	<iostream>
+	<cmath>
+	<ctime>
+

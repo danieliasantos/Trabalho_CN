@@ -5,18 +5,19 @@ using namespace std;
 
 int nIteracoes=0;
 
-void troca (int* vet, int i, int j);
-int particao (int* vet, int e, int d);
-void quickSort (int* vet, int e, int d);
+void troca (float* vet, int i, int j);
+int particao (float* vet, int e, int d);
+void quickSort (float* vet, int e, int d);
 int main()
 {
     int n=5000, e=0, d=n-1;
-    int* vet = new int[n];
+    float* vet = new float[n];
     quickSort(vet,e,d);
 
+    srand(time(NULL));
     for(int i=0; i<n; i++)
     {
-        vet[i] = n-i;
+        vet[i] = ((double) rand() / (RAND_MAX));
     }
 
     clock_t start;
@@ -31,7 +32,7 @@ int main()
     return 0;
 }
 
-void quickSort (int* vet, int e, int d)
+void quickSort (float* vet, int e, int d)
 {
     if(d<=e)
         return;
@@ -40,7 +41,7 @@ void quickSort (int* vet, int e, int d)
     quickSort(vet,p+1,d);
 }
 
-int particao (int* vet, int e, int d)
+int particao (float* vet, int e, int d)
 {
     int i=e;
     int j=d;
@@ -68,7 +69,7 @@ int particao (int* vet, int e, int d)
     return i;
 }
 
-void troca (int* vet, int i, int j)
+void troca (float* vet, int i, int j)
 {
     int aux;
     aux=vet[i];
