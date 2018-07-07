@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1530932490 source:c:\users\mateus.castro\documents\github\trabalho_cn\c - mateus tadeu\fibonacci\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
