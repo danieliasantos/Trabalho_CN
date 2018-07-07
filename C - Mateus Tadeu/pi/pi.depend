@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1530927813 source:c:\users\mateus.castro\documents\github\trabalho_cn\c - mateus tadeu\pi\main.c
+1530940313 source:c:\users\mateus.castro\documents\github\trabalho_cn\c - mateus tadeu\pi\main.c
 	<stdio.h>
 	<stdlib.h>
+	<time.h>
 

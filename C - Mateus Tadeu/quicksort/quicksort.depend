@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1530940313 source:c:\users\mateus.castro\documents\github\trabalho_cn\c - mateus tadeu\quicksort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<malloc.h>
+

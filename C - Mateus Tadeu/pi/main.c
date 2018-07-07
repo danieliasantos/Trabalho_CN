@@ -29,7 +29,7 @@ int main()
     duration = ( clock() - start ) / (double) CLOCKS_PER_SEC;
 
     printf("O tempo gasto foi: %f", duration);
-    printf("\nO numero de interacoes foram: %d", ninteracoes);
+    printf("\nO numero de iteracoes foram: %d", ninteracoes);
 
     return 0;
 }

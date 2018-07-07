@@ -33,7 +33,7 @@ int main()
     printf("\nO valor sequencial de fibonacci = %i \n", fib(n, &ninteracoes));
 
     printf("\nO tempo gasto foi: %f s", duration);
-    printf("\nO numero de interacoes foram: %d \n", ninteracoes);
+    printf("\nO numero de iteracoes foram: %d \n", ninteracoes);
 
     return 0;
 }
