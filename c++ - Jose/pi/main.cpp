@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <ctime>
 
 using namespace std;
 
@@ -23,6 +24,15 @@ double pisumvec()
 
 int main()
 {
-    cout << pisumvec();
+    clock_t start;
+    double duration;
+
+    start = clock();
+    pisumvec();
+
+    duration = ( clock() - start ) / (double) CLOCKS_PER_SEC;
+
+    cout<<"Tempo: "<< duration <<endl;
+    cout<<"Iterações: "<< nIteracoes <<endl;
     return 0;
 }
