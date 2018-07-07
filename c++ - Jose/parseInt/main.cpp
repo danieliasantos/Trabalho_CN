@@ -4,10 +4,11 @@
 #include <math.h>
 #include <stdio.h>
 #include <sstream>
-
+#include <ctime>
 
 using namespace std;
 
+int nIteracoes=0;
 int hexToDec(string s)
 {
     int aux;
@@ -33,18 +34,27 @@ int parseIntPerf (int t)
 
     for(int i=0; i<t; i++)
     {
+        nIteracoes+=1;
         n = rand()%(4294967295);
         s = decToHex(n);
         m = hexToDec(s);
-        cout<<"\nNumero: "<<n<<endl;
-        cout<<"Hex: "<<s<<endl;
-        cout<<"Dec: "<<m<<endl;
     }
     return n;
 }
 int main()
 {
     int i=1000;
-    i=parseIntPerf(i);
+
+    clock_t start;
+    double duration;
+
+    start = clock();
+    parseIntPerf(i);
+
+    duration = ( clock() - start ) / (double) CLOCKS_PER_SEC;
+
+    cout<<"Tempo: "<< duration <<endl;
+    cout<<"Iterações: "<< nIteracoes <<endl;
+
     return 0;
 }
