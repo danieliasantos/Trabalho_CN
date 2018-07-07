@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1530908663 source:c:\users\samsung\desktop\parseint\main.cpp
-	<iostream>
-	<time.h>
-	<stdlib.h>
-	<math.h>
-	<stdio.h>
-	<sstream>
-
