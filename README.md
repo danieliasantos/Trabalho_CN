@@ -1,4 +1,4 @@
-# Trabalho_CN
+﻿# Trabalho_CN
 Trabalho Final em grupo da matéria de Cálculo Numérico, IFMG - Sabará
 
 Deverá ser feito um benchmark de uma série de funções-teste referentes a um conjunto de programas
@@ -26,6 +26,7 @@ para a realizaçao dos testes. A relação dos programas a serem utilizados é a
 14. Haskel
 15. LuaJIT
 16. Go
+17. C#
 
 
 O trabalho deve conter um breve resumo de cada programa informando algumas características
