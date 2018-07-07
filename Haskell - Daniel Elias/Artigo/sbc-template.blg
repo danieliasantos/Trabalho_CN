@@ -19,6 +19,10 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Database file #1: sbc-template.bib
 Warning--entry type for "haskellWiki" isn't style-file defined
 --line 15 of file sbc-template.bib
+Warning--entry type for "guiaEng" isn't style-file defined
+--line 33 of file sbc-template.bib
+Warning--entry type for "guiaPtBr" isn't style-file defined
+--line 47 of file sbc-template.bib
 Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
@@ -32,10 +36,10 @@ Reallocated glb_str_end (elt_size=8) to 20 items from 10.
 +---------------------------------------------------------+
 
 Here's how much of BibTeX's memory you used:
- Cites:                 2 out of 750
- Fields:              127 out of 5000
+ Cites:                 4 out of 750
+ Fields:              220 out of 5000
  Hash table:        99451 out of 100000
- Strings:            1172 out of 100000
- Free string pool:   9636 out of 65000
+ Strings:            1183 out of 100000
+ Free string pool:   9931 out of 65000
  Wizard functions:   6522 out of 9000
-(There was 1 warning)
+(There were 3 warnings)
