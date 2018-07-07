@@ -1,0 +1,8 @@
+Para passar uma string para um dado do tipo inteiro basta utilizar o método parse-integer que a documentação pode ser encontrada em:
+
+Documentação: http://www.lispworks.com/documentation/HyperSpec/Body/f_parse_.htm
+
+Exemplo de código:
+(parse-integer "-64")
+
+No exemplo acima, a string que possui como valor "-64" é transformada para um dado inteiro através do método parseInt
