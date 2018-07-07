@@ -5,4 +5,10 @@ Documentação: http://www.lispworks.com/documentation/HyperSpec/Body/f_parse_.h
 Exemplo de código:
 (parse-integer "-64")
 
-No exemplo acima, a string que possui como valor "-64" é transformada para um dado inteiro através do método parseInt
+No exemplo acima, a string que possui como valor "-64" é transformada para um dado inteiro através do método parseInt. A base padrão para
+este processo é a base decimal, porém pode-se definir o tipo de base desajada adicionado como parâmetro :radix2 por exemplo para a base
+binária. a base pode variar de 2-36.
+
+Exemplo:
+
+(parse-integer "100 :radix2") // 4 pois 100 em base binária é equivalente ao número 4 em decimal.
