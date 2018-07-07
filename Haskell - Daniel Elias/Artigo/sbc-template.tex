@@ -12,7 +12,7 @@
 
 %\sloppy
 
-\title{Uma análise de desempenho de processamento utilizando Haskell}
+\title{Uma breve apresentação do Haskell}
 
 \author{Daniel Elias dos Santos\inst{1}}
 
@@ -24,60 +24,26 @@
 \begin{document} 
 	
 	\maketitle
-	
-	\begin{resumo} 
-		
-	\end{resumo}
 
-	\section{Objetivo}
-	
 	\section{Introdução}
 		\subsection{Breve histórico}
-			Haskell é uma linguagem de programação puramente funcional, polimórfica, estaticamente tipada e de avaliação tardia (\textit{lazy})\textsuperscript{\cite{haskellWiki}}. Seu nome foi dado em homenagem ao lógico Haskell Brooks Curry, cujo trabalho em lógica matemática serve como base para linguagens funcionais. A linguagem foi projetada por uma comissão, formada em 1987 a partir da conferência ``\textit{Functional Programming Languages and Computer Architecture}'' realizada em Portland, Oregon (EUA), para criação de uma linguagem funcional unificada, que estabelecesse uma base estável para o desenvolvimento de aplicações, e assim, popularizasse o paradigma funcional de programação\textsuperscript{\cite{histHas2007}}. A primeira versão da linguagem foi apresentada em 1990, e a primeira versão considerada estável foi apresentada em 1999. Haskell foi influenciada pelas linguagens Miranda e ML.
+			Haskell é uma linguagem de programação puramente funcional, polimórfica, estaticamente tipada e de avaliação tardia (\textit{lazy})\textsuperscript{\cite{haskellWiki}}. Seu nome foi dado em homenagem ao lógico Haskell Brooks Curry, cujo trabalho em lógica matemática serve como base para linguagens funcionais. A linguagem foi projetada por uma comissão, formada em 1987 a partir da conferência ``\textit{Functional Programming Languages and Computer Architecture}'' realizada em Portland, Oregon (EUA), para criação de uma linguagem funcional unificada, que estabelecesse uma base estável para o desenvolvimento de aplicações, e assim, popularizasse o paradigma funcional de programação\textsuperscript{\cite{histHas2007}}. A primeira versão da linguagem foi apresentada em 1990, e a primeira versão considerada estável foi apresentada em 1999. Haskell foi influenciada pelas linguagens Miranda e ML.\\
+			
+			A linguagem, que utiliza o paradigma funcional, difere em muito do paradigma imperativo das linguagens mais conhecidas, tais como Cpp, Java ou CSharp, tanto em semântica quanto em sintaxe, o que pode surpreender desenvolvedores acostumados com o modelo imperativo. Dentre os diversos tutoriais disponíveis na \textit{Web} Miran Lipovača\textsuperscript{\cite{guiaEng}} criou um indicado para iniciantes, que foi traduzido para português brasileiro por Tailor Fontela\textsuperscript{\cite{guiaPtBr}}.
 		\subsection{Características principais}
-			\subsubsection{Tipos de dados}
-			\subsubsection{Estruturas de dados}
-			\subsubsection{Semântica}
+			Haskel é uma linguagem estaticamente tipada, o que significa que erros são capturados em tempo de compilação. Os seus algoritmos não são expressos através de listas de instruções, como ocorre nas linguagens supracitadas: Haskell tem seus algoritmos totalmente baseados no conceito matemático de função. As estruturas de repetição que utiliza são por recursividade; outras estruturas como $for$ ou $while$ não estão disponíveis.
+			
+			Em Haskell, funções são tratadas como tipos de primeira classe, que podem ser retornadas por outras funções ou passadas como parâmetro para outras funções. Alguns dos outros tipos primitivos principais são \textbf{\textit{Bool}}, que pode assumir \textit{true} ou \textit{false}; \textbf{\textit{Char}}, que se refere a caracteres isolados (`a', `b', `c', `1', `2', `3', etc.); \textbf{\textit{String}}, como uma sequência de caracteres (``\textit{Hello World!}''); \textbf{\textit{Int}}, que são valores inteiros do intervalo $-2^{31}$ e $2^{31}$; \textbf{\textit{Integer}}, que tem maior capacidade que o tipo Int; \textbf{\textit{Float}}, que é um número real em ponto flutuante de precisão simples; e \textbf{\textit{Double}}, que é um número real em ponto flutuante com o dobro de precisão. As estruturas de dados mais utilizadas em Haskell são listas e tuplas, sendo que cada lista pode conter outras listas, tornando-se matrizes
 
 	\section{Metodologia}
 		\subsection{Ambiente}
-		
+			A execução dos testes foi realizada em ambiente Linux, utilizando a distribuição Debian GNU/Linux 9.4 (Sstretch) 64bits, com o kernel em sua versão 4.9.88-1+deb9u1. Além disso, o processador da máquina utilizada foi fabricado pela Intel, modelo i7 4510U 2GHz, com 8GB DDR3 1600GHz de memória RAM instalada. O compilador da linguagem foi o \textit{The Glasgow Haskell Compiler} (GHCi), em sua versão 8.0.1. Além disso, foi utilizada a IDE \textit{Leksah Haskell}, que facilita a codificação e compilação da linguagem.
+			
+			Para execução dos códigos, basta executar o compilador (num terminal, ou prompt de comando), com o comando $ghci$, e executar o módulo de interesse (Fibonacci.hs, Mandel.hs, Newton.hs, Parse.hs, Pi.hs, Quicksort.hs). Para execução de todos os algoritmo é necessário que as bibliotecas Graphics.UI.GLUT e Numeric.AD sejam instaladas no ambiente. Em Linux podem ser instaladas por meio do gerenciador de dependências ``Cabal'', com os comandos $\textit{cabal install glut}$ e $\textit{cabal install ad}$. Após, basta chamar o nome do módulo com os parâmetros.
+			
 	\section{Conclusão}
+		Haskell é uma poderosa linguagem de programação altamente baseada em conceitos matemáticos e de uso geral, que pode ser usada em praticamente qualquer tipo de programa e problema. Na internet podemos encontrar vários programas e algoritmos feitos em Haskell; destaca-se aqui o site oficial da linguagem \href{http://www.haskell.org}{http://www.haskell.org}() que possui vasto conteúdo abrangendo tutoriais, documentação, implementações, bibliotecas, etc. Os tutoriais citados anteriormente poderão ser utilizados como uma boa base de conhecimento para quem se interessar, pois são bem didáticos.
 
-\begin{comment}	
-	
-	Texto com exemplo de referência a Tabela~\ref{tab:tarefas}.
-	
-	\begin{table}[ht]
-	\centering
-	\caption{Exemplo de tabela}
-	\label{tab:tarefas}
-	\begin{tabular}{ p{3cm}|p{6cm}|c }
-	\multicolumn{3}{c}{Título do projeto} \\
-	\hline
-	Coluna 1 & Coluna 2 & Coluna 3\\
-	\hline
-	\multirow{3}{3cm}{Linha 1, coluna 1}  & Linha 1, coluna 2 & Linha 1, coluna 3\\
-	& Linha 1.2, coluna 2 & Linha 1.2, coluna 3 \\
-	& Linha 1.3, coluna 2 & Linha 1.3, coluna 3 \\
-	\hline
-	\multirow{3}{3cm}{Linha 2, coluna 1} & Linha 2, coluna 2 & Linha 2, coluna 3 \\
-	& Linha 2.2, coluna 2 & Linha 2.2, coluna 3 \\
-	& Linha 2.3, coluna 2 & Linha 2.3, coluna 3 \\
-	\hline
-	\end{tabular}
-	\end{table}
-	
-	Texto da terceira subseção com exemplo de referência a Figura~\ref{fig:exemplo}.
-	
-	\begin{figure}[ht]
-	\centering
-	\includegraphics[width=.9\textwidth]{triangulo_quadrado_circulo.jpg}
-	\caption{Figura de exemplo}
-	\label{fig:exemplo}
-	\end{figure}
-	
-\end{comment}
 	\bibliographystyle{abnt-num}
 	\bibliography{sbc-template}	
 \end{document}
