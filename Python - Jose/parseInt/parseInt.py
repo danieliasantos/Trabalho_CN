@@ -20,7 +20,7 @@ def parseintperf(t):
         Assert(m == n)
 
 start = time.time()
-parseintperf(10000000);
+parseintperf(1000);
 end = time.time()
 
 print 'Tempo:',end - start

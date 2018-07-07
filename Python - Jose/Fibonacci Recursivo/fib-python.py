@@ -9,7 +9,7 @@ def fibRecursivo(i):
     else:
         return fibRecursivo(i-1)+fibRecursivo(i-2);
 
-num = input("Digite de termos da sequencia que deseja: ")
+num = 30
 
 start = time.time()
 for i in range(1,num):

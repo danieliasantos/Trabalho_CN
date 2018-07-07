@@ -23,7 +23,7 @@ def sort(array):
         nIteracoes = nIteracoes+1
         return array
 
-n = input("Digite o tamanho do vetor a ser ordenado ")
+n = 5000
 array = []
 # Popula o vetor com numeros entre 0 e 1
 for i in range(0, n):
